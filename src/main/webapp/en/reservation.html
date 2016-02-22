@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="Description" content="" />
+<meta name="Keywords" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Casa Lavanda</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<!-- Add jQuery library -->
+<link rel="stylesheet" type="text/css" href="js/jquery-easyui-1.2.6/themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="js/jquery-easyui-1.2.6/themes/icon.css">
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-easyui-1.2.6/jquery.easyui.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.datebox').datebox({  
+			required:true  
+		});
+		$('.required').validatebox({  
+			required:true  
+		});
+	});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25295208-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo" class="poesia">
+			<h1><a href="#">Casa Lavanda</a></h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="gallery_rooms.html">The House</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="gallery_food.html">Food</a></li>
+				<li class="first current_page_item"><a href="reservation.html">Reservation</a></li>
+			</ul>
+			<br class="clearfix" />
+		</div>
+	</div>
+	<div id="page">
+		<div id="content">
+			<div class="box">
+				<h3>Reservation / Payment</h3>
+                <p align="center">Rates per week in euros</p>
+                <p>
+                	<table class="payment">
+                    	<thead>
+                            <tr>
+                                <th>Low Season</th>
+                                <th>High Season</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        	<tr>
+                            	<td>01/March - 09/June</td>
+                                <td>10/June - 28/September</td>
+                            </tr>
+                            <tr>
+                            	<td>29/September - 01/December</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                            	<td>EUR 580,00</td>
+                                <td>EUR 760,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </p>
+                <p>
+                In addition a final cleaning fee: 50 Euros. 
+                <br/>Minimum stay during high season: 1 week; during low season: 3 days. 
+                <br/>A weekly laundry pickup, bed sheets and bath towels are included.</p>
+            </div>
+            <div class="box">
+				<h3>Send a reservation request</h3>
+                <p>
+                <form action="../reservation" method="post" novalidate="novalidate">
+                <table class="form">
+                    <tbody>
+                        <tr>
+                            <td class="label">Name: </td><td class="field">
+                            	<input type="text" name="name" class="required" required="true" /></td>
+                        </tr><tr>
+                            <td class="label">Surname: </td><td class="field">
+                            	<input type="text" name="surname" class="required" required="true" /></td>
+                        </tr><tr>
+                            <td class="label">City: </td><td class="field">
+                            	<input type="text" name="city" class="required" required="true" /></td>
+                        </tr><tr>
+                            <td class="label">Country: </td><td class="field">
+                            	<input type="text" name="country" class="required" required="true" /></td>
+                        </tr><tr>
+                            <td class="label">State: </td><td class="field">
+                            	<input type="text" name="state" class="required" required="true" /></td>
+                        </tr><tr>
+                            <td class="label">Telephone: </td><td class="field">
+                            	<input type="text" name="telephone" class="required" required="true" /></td>
+                        </tr><tr>
+                            <td class="label">E-Mail: </td><td class="field">
+                            	<input type="text" name="email" class="required" required="true" validType="email"/></td>
+                        </tr><tr>
+                            <td class="label">Arrival on: </td><td class="field">
+                            	<input type="text" name="arrival" class="datebox required" required="true" /></td>
+                        </tr><tr>
+                            <td class="label">Departure on: </td><td class="field">
+                            	<input type="text" name="departure" class="datebox required" required="true" /></td>
+                        </tr><tr>
+                            <td class="label">Number of night(s): </td><td class="field">
+                            	<input type="text" name="numnights" class="required" required="true" /></td>
+                        </tr><tr>
+                            <td class="label">Number of person(s): </td><td class="field">
+                            	<input type="text" name="numpersons" class="required" required="true" /></td>
+                        </tr><tr>
+                            <td class="label">Number of children: </td><td class="field">
+                           		<input type="text" name="numchildren" class="required" required="true" /></td>
+                        </tr><tr>
+                            <td class="label">Message: </td><td class="field">
+                            	<input type="text" name="message" /></td>
+                        </tr>
+                        <!--<tr>
+                            <td class="label">
+                            	<img id="captcha" src="../securimage/securimage_show.php" alt="CAPTCHA Image" />
+                            </td>
+                            <td class="field">
+                            	<input id="captcha_code" type="text" name="captcha_code" size="10" maxlength="6" required="true" />
+								<br/><a href="#" onclick="document.getElementById('captcha').src = '../securimage/securimage_show.php?' + Math.random(); return false">Different Image</a>
+                            </td>
+                        </tr>-->
+                        <tr>
+                            <td class="label">&nbsp;</td><td class="field">
+                            	<input type="submit" name="submitbtn" value="Submit" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+                </form>
+                </p>
+			</div>
+			
+            
+			<br class="clearfix" />
+		</div>
+		<div id="sidebar">
+			<div class="box">
+				<h3>Contacts</h3>
+                <p><address>
+                Addess:<br/>Frazione di Loretello 79, Arcevia (AN) 60011, Italy</address>
+                </p>
+                <p>Phone: 0049 (0) 8452 306 3098</p>
+                <p>Mobile: 0157 35369257</p>
+                <p>E-Mail:<br/><a href="mailto:feriencasalavanda@gmail.com">feriencasalavanda@gmail.com</a>
+                </p>
+				<p>
+					<!--
+                    Skype 'My status' button
+                    http://www.skype.com/go/skypebuttons
+                    -->
+                    <!--script type="text/javascript" src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js"></script-->
+                    <a href="skype:casa.lavande79?call"><img src="http://mystatus.skype.com/bigclassic/casa.lavande79" style="border: none;" width="182" height="44" alt="My status" /></a>
+				</p>
+			</div>
+		</div>
+		<br class="clearfix" />
+	</div>
+</div>
+<div id="footer">
+
+</div>
+</body>
+</html>

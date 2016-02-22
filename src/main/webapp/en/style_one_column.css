@@ -1,0 +1,18 @@
+/* CSS Document */
+
+#content {
+	padding: 40px;
+	width: 896px;
+}
+.gallery a {
+	margin: 0px, 0px, 0px, 0px;
+	padding: 0px, 0px, 0px, 0px;
+	border-style: none;
+}
+.gallery img {
+	width: 220px;
+	height: 147px;
+	margin: 0px, 0px, 0px, 0px;
+	padding: 0px, 0px, 0px, 0px;
+	border-style: none;
+}
